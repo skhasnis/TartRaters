@@ -41,7 +41,7 @@ class TartsController < ApplicationController
     private 
     
         def tart_params
-            params.require(:tart).permit(:name, :tart_image)
+            params.require(:tart).permit(:name, :tart_img)
         end
 
         def find_tart
