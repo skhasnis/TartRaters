@@ -1,0 +1,2 @@
+class PopTart < ApplicationRecord
+end

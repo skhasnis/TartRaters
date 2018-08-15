@@ -1,0 +1,9 @@
+<div class="row">
+	<% @tarts.each do |tart| %>
+		<div class="col-md-3"> 
+			<a href="/tarts/ <%= tart.id %>">
+				<%= image_tag tart.tart_img.url(:tart_index), class:"tart"%>
+			</a>
+		</div>
+	<% end %>  
+</div>

@@ -1,0 +1,9 @@
+<h1> Edit Rating </h1>
+
+<%= simple_form_for([@tart, @rating]) do |f|  %>
+	<%= f.input :taste %>
+	<%= f.input :appearance %>
+	<%= f.input :texture %>
+	<%= f.input :comment %>
+	<%= f.submit 'Edit Rating' %>
+<% end %>

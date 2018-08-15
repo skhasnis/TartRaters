@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+	resources :tarts do 
+		resources :ratings
+	end
+	root 'tarts#index'
 end

@@ -1,0 +1,34 @@
+<%= simple_form_for ([@tart, @tart.ratings.build]) do |f| %>
+	<div id="rating-taste">
+		<label>Taste</label>
+	</div>
+	<div id="rating-appearance">
+		<label> Appearance </label>
+	</div>
+	<div id="rating-texture">
+		<label>Texture</label>
+	</div>
+	<%= f.input :comment %> 
+	<%= f.submit 'Post Rating' %>
+<% end %> 
+
+<script>
+	$('#rating-taste').raty({
+		path: '/assets/images',
+		scoreName: 'rating[taste]'
+	});
+</script>
+
+<script>
+	$('#rating-appearance').raty({
+		path: '/assets/images',
+		scoreName: 'rating[appearance]'
+	});
+</script>
+
+<script>
+	$('#rating-texture').raty({
+		path: '/assets/images',
+		scoreName: 'rating[texture]'
+	});
+</script>
